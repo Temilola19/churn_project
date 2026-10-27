@@ -1,0 +1,11 @@
+{
+  "rows_raw": 7043,
+  "cols_raw": 21,
+  "duplicate_ids": 0,
+  "duplicate_rows": 0,
+  "blank_total_charges": 11,
+  "blank_total_charges_all_tenure0": true,
+  "rows_clean": 7043,
+  "churn_rate": 0.2654,
+  "missing_after_clean": 0
+}

@@ -1,0 +1,83 @@
+{
+  "cv": [
+    {
+      "model": "Baseline (prior)",
+      "cv_auc": 0.5,
+      "cv_auc_sd": 0.0,
+      "cv_pr_auc": 0.2654
+    },
+    {
+      "model": "Logistic regression",
+      "cv_auc": 0.8453,
+      "cv_auc_sd": 0.0123,
+      "cv_pr_auc": 0.6587
+    },
+    {
+      "model": "Gradient boosting",
+      "cv_auc": 0.8461,
+      "cv_auc_sd": 0.0126,
+      "cv_pr_auc": 0.6591
+    }
+  ],
+  "test": [
+    {
+      "model": "Baseline (prior)",
+      "auc": 0.5,
+      "pr_auc": 0.2654,
+      "brier": 0.195
+    },
+    {
+      "model": "Logistic regression",
+      "auc": 0.8418,
+      "pr_auc": 0.6351,
+      "brier": 0.138
+    },
+    {
+      "model": "Gradient boosting",
+      "auc": 0.8443,
+      "pr_auc": 0.6608,
+      "brier": 0.1357
+    }
+  ],
+  "best_model": "Gradient boosting",
+  "best_auc_ci95": [
+    0.823,
+    0.865
+  ],
+  "operating_point": {
+    "threshold": 0.48,
+    "contacted_pct": 0.226,
+    "precision": 0.651,
+    "recall": 0.553,
+    "f1": 0.598
+  },
+  "profit_by_strategy": {
+    "Do nothing": 0.0,
+    "Contact everyone": -59255.0,
+    "Model-targeted (t=0.48)": 15661.0
+  },
+  "top_decile_lift": 2.86,
+  "top2_deciles_capture": 0.492,
+  "top_risk_drivers": {
+    "InternetService_Fiber optic": 0.71,
+    "Contract_Month-to-month": 0.67,
+    "TotalCharges": 0.42,
+    "PaperlessBilling_Yes": 0.37,
+    "PaymentMethod_Electronic check": 0.28
+  },
+  "top_protective": {
+    "tenure": -1.15,
+    "InternetService_No": -0.7,
+    "Contract_Two year": -0.64,
+    "PhoneService_Yes": -0.58,
+    "OnlineSecurity_Yes": -0.25
+  },
+  "perm_importance_top5": {
+    "PaymentMethod": 0.0042,
+    "TotalCharges": 0.0051,
+    "InternetService": 0.0382,
+    "tenure": 0.0566,
+    "Contract": 0.0915
+  },
+  "test_n": 1409
+}

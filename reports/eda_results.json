@@ -1,0 +1,107 @@
+{
+  "overall_churn": 0.2654,
+  "assoc_top5": [
+    {
+      "feature": "Contract",
+      "cramers_v": 0.41
+    },
+    {
+      "feature": "InternetService",
+      "cramers_v": 0.322
+    },
+    {
+      "feature": "PaymentMethod",
+      "cramers_v": 0.303
+    },
+    {
+      "feature": "auto_pay",
+      "cramers_v": 0.21
+    },
+    {
+      "feature": "PaperlessBilling",
+      "cramers_v": 0.191
+    }
+  ],
+  "not_significant_holm": [
+    "PhoneService",
+    "gender"
+  ],
+  "mwu_tenure": {
+    "median_churn": 10.0,
+    "median_stay": 38.0,
+    "p": 2.419635517951866e-208,
+    "rank_biserial": -0.48
+  },
+  "mwu_MonthlyCharges": {
+    "median_churn": 79.65,
+    "median_stay": 64.42500000000001,
+    "p": 3.311627651988585e-54,
+    "rank_biserial": 0.242
+  },
+  "mwu_TotalCharges": {
+    "median_churn": 703.55,
+    "median_stay": 1679.525,
+    "p": 5.685033866207314e-83,
+    "rank_biserial": -0.301
+  },
+  "risk_ratio_mtm": {
+    "rr": 6.32,
+    "ci95": [
+      5.53,
+      7.23
+    ]
+  },
+  "monthly_revenue_lost_to_churn": 139131.0,
+  "share_of_monthly_revenue_lost": 0.305,
+  "top_segment_mrr": [
+    {
+      "Contract": "Month-to-month",
+      "InternetService": "Fiber optic",
+      "customers": 2128,
+      "churners": 1162,
+      "churn_rate": 0.546,
+      "mrr_lost": 100482.0,
+      "share_of_mrr_lost": 0.722
+    },
+    {
+      "Contract": "Month-to-month",
+      "InternetService": "DSL",
+      "customers": 1223,
+      "churners": 394,
+      "churn_rate": 0.322,
+      "mrr_lost": 18367.25,
+      "share_of_mrr_lost": 0.132
+    },
+    {
+      "Contract": "One year",
+      "InternetService": "Fiber optic",
+      "customers": 539,
+      "churners": 104,
+      "churn_rate": 0.193,
+      "mrr_lost": 10571.95,
+      "share_of_mrr_lost": 0.076
+    }
+  ],
+  "fiber_vs_dsl_by_tenure": {
+    "0-6m": {
+      "DSL": 0.482,
+      "Fiber optic": 0.742
+    },
+    "7-12m": {
+      "DSL": 0.225,
+      "Fiber optic": 0.611
+    },
+    "13-24m": {
+      "DSL": 0.196,
+      "Fiber optic": 0.488
+    },
+    "25-48m": {
+      "DSL": 0.108,
+      "Fiber optic": 0.366
+    },
+    "49-72m": {
+      "DSL": 0.043,
+      "Fiber optic": 0.171
+    }
+  }
+}
